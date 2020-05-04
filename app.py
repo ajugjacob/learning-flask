@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for
-'''hello'''
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = '21fa516ffb9d9d823ed2bab353270f66'
 
 posts = [
     {
